@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+}
+
+/*Navigation bar*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: 10px;
+  gap: 1%;
+  /*used for the smooth transition*/
+  transition: 0.3s;
+}
+footer {
+  background-color: #500956;
+}
+.logo {
+  width: 6%;
+}
+
+/*Video Background*/
+.Background-Video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -10;
+}
+
+/* HOMEPAGE */
+.container-slideshow {
+  display: grid;
+  grid-gap: 25px 0px;
+  margin-top: 6.5%;
+}
+
+/*Head container info*/
+.container-Info {
+  display: grid;
+  grid-gap: 25px 0px;
+  padding: 50px;
+  background-color: plum;
+  border: 4px solid darkslateblue;
+  margin: 5% 10%;
+}
+
+.container-Info-Inner {
+  display: grid;
+  grid-gap: 25px 0px;
+  padding: 50px;
+  grid-template-columns: repeat(3, 33%);
+}
+
+.container-item-info {
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+}
+/* Head container herInfo */
+.container-HerInfo {
+  display: grid;
+  grid-gap: 25px 0px;
+  padding: 50px;
+  background-color: plum;
+  border: 4px solid darkslateblue;
+  margin: 5% 10%;
+}
+.container-HerInfo-Inner {
+  display: grid;
+  grid-gap: 25px 0px;
+  padding: 50px;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.container-item-HerInfo-Inner {
+  width: 90%;
+  font-size: 32px;
+}
+
+.Footer {
+  display: grid;
+  grid-gap: 25px 0px;
+  padding: 50px;
+}
+
+/*Cards*/
+.Card-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/S\ U\ N\ coverart.JPG") center / cover no-repeat;
+  color: white;
+  height: 400px;
+}
+
+.Card-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/IMG_5780.JPG") center / cover no-repeat;
+  color: white;
+  height: 400px;
+}
+
+.Card-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/Healing\ coverart.JPG") center / cover no-repeat;
+  color: white;
+  height: 400px;
+}
+
+.info-img {
+  width: 100%;
+}
+
+/* SLIDESHOW */
+
+.Slide-Image {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}

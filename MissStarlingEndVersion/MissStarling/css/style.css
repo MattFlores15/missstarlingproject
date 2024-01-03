@@ -1,0 +1,29 @@
+body {
+	background-color: indigo;
+	margin: 0;
+}
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	padding: 10px;
+	gap: 1%;
+	/*used for the smooth transition*/
+	transition: 0.3s;
+}
+p {
+	font-size: 32px;
+}
+h1 {
+	margin-top: 10%;
+	font-size: 100px;
+}
+.logo {
+	width: 5%;
+}
+#myDIV {
+  width: 100%;
+  overflow: auto;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Miss Starling</title>
+
+
+    <!--Link your css here-->
+    <link rel="stylesheet" type="text/css" href="css/ms_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+
+    <!--Link your javascript here-->
+    <script type="text/javascript" defer="" src="jvas/ms_java.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <!-- Fonts -->
+    <link rel="preload" href="fonts/Lora/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/cocotte/CocotteAlternate-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/cocotte/Cocotte-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Raleway/Raleway-ThinItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Raleway/Raleway-Thin.woff2" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"  id="navigation" onmouseover="Hovering()" onmouseout="NotHovering()">
+        <!--Insert the menu here.-->
+        <h1 class="nav-title" id="nav_title">MISS STARLING</h1>
+
+        <img
+           
+            class="flor"
+            id="flor1"
+            src="images/kissclipart-purple-flowers-clipart-borders-and-frames-watercol-de6bf1e8cb7df248.png"
+            alt="flower"
+        />
+        <a class="navbar-brand" href="index.html"
+          ><img
+            id="logoimage"
+            class="logo"
+            src="images/logoExports/PNG/MS_Logo_Compact_web.png"
+            alt="her logo"
+        /></a>
+
+        <img
+         
+            class="flor"
+            id="flor2"
+            src="images/flowers_navbar2.png"
+            alt="flower"
+        />
+        <div class="collapse" id="navbarToggleExternalContent">
+          <ul id="menu_navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="coming-soon.html">STORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">EVENTS
+              
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="menu" id="men" onmouseover="myHover()" onmouseleave="myHover2()" onclick="myClick()">
+          <button
+            class="hamburger"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="animated-icon1">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </div>
+          </button>
+        </div> -->
+
+        <!--MOBILE MENU-->
+        <input type="checkbox" id="toggle" class="input-toggler">   
+          <label for="toggle" class="menu-toggler">
+            <span class="menu-toggler-line"></span>
+            <span class="menu-toggler-line"></span>
+            <span class="menu-toggler-line"></span>
+          </label>
+
+
+        <aside class="sidebar">
+          <ul class="menu">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li><a class="menu-link" href="events.html">EVENTS</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT</a></li>
+            <li><a class="menu-link" href="contact.html">CONTACT</a></li>
+            <li><a class="menu-link" href="coming-soon.html">STORE</a></li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <main onload="showSlides()">
+      <!--Background Video-->
+      <div class="fullscreen-bg">
+        <video
+          loop
+          muted
+          autoplay
+          poster="images/IMG_5790.JPG"
+          class="fullscreen-bg__video"
+        >
+          <source src="videos/MissStarlingFootage1.mp4" type="video/webm" />
+          <source src="videos/MissStarlingFootage1.mp4" type="video/mp4" />
+          <source src="videos/MissStarlingFootage1.mp4" type="video/ogg" />
+        </video>
+      </div>
+      <div class="coming">
+        <a class="footer-logo">
+          <img
+          class="coming-img"
+          src="images/logoExports/SVG/MS_Logo_Full.svg"
+          alt="footer image"
+          /></a>
+        <h2 >Coming Soon</h2>
+      </div>
+    </main>
+    <footer>
+      <!--Footer container-->
+      <div class="ftr">
+        <div class="container-item">
+          <a class="footer-logo" onclick="topFunction()" id="myBtn">
+            <img
+              class="f-logo"
+              src="images/logoExports/SVG/MS_Logo_Full.svg"
+              alt="footer image"
+          /></a>
+        <!--navigation for her socials-->
+        <ul class="icons">
+          <a href="https://www.youtube.com/channel/UCPDtNmcz9bs-4bfB3Ia_X4A" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.facebook.com/missstarlingmusic/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/miss_starling.music/" target="_blank" rel="noopener noreferrer"> <i class="bi bi-instagram"></i></i></a>
+          <a href="https://open.spotify.com/artist/2znAhxI4cVeGBd7e3G2t1E" target="_blank" rel="noopener noreferrer"><i class="bi bi-spotify"></i></a>
+        </ul>
+        <ul class="list-inline">
+       <li class="list-inline-item"><a href="index.html">Home</a></li>
+       <li class="list-inline-item"><a href="events.html">Events</a></li>
+       <li class="list-inline-item"><a href="about.html">About</a></li>
+       <li class="list-inline-item"><a class="privacy" href="#">Terms</a></li>
+       <li class="list-inline-item"><a class="privacy" href="privacy.html">Privacy Policy</a></li>
+   </ul>
+
+        <p>GRUPO DOS © 2021</p>
+
+
+  </footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  </body>
+</html>
